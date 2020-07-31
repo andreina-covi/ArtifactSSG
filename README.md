@@ -29,4 +29,4 @@ Pharo.exe ../Pharo9_330.image
 **Open the Visualization.**
 Select the code that appears on window, right click on window and select "Inspect". According the OS you also can press: Command + I (MacOS) or Ctrl + I (Linux and Windows).
 
-<img src="images/inspectCode.png" width="300">
+<img src="images/inspectCode.png" width="500">
