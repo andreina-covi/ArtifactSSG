@@ -1,3 +1,5 @@
 #ignore SmallSuite log
 SmallSuiteLogger.log
 
+#ignore PharoDebug log
+PharoDebug.log
