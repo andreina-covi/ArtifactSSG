@@ -50,7 +50,7 @@ If the visualization window is very tiny or small you can extend it. Furthermore
 
 <p float="left">
   <img src="images/scale.png" width="400">
-  <img src="images/exampleStack.png" width="400">
+  <img src="images/exampleStack.png" width="595">
 </p>
 
 ## Experiment
