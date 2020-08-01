@@ -48,10 +48,10 @@ Execute the code using the green play button (at the top right of the window). A
 After doing that will appear a window where you need to write your name (Is is part of Pharo).
 If the visualization window is very tiny or small you can extend it. Furthermore, there are options to zoom in or zoom out the visualization.
 
-<img src="images/scale.png" width="400">
-<img src="images/exampleStack.png" width="400">
-
-![alt-text-1](images/scale.png) ![alt-text-2](images/exampleStack.png)
+<p float="left">
+  <img src="images/scale.png" width="400">
+  <img src="images/exampleStack.png" width="400">
+</p>
 
 ## Experiment
 
@@ -81,15 +81,15 @@ Pharo.exe ..\DataFrame.image
 
 In the same way NeoJSON image contains three examples to execute.
 
-***MacOS***
+**MacOS**
 ```
 ./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo NeoJSON.image
 ```
-***Linux***
+**Linux**
 ```
 ./Pharo-Linux/pharo-ui NeoJSON.image
 ```
-***Windows***
+**Windows**
 ```
 cd Pharo-Windows
 Pharo.exe ..\NeoJSON.image
@@ -102,17 +102,17 @@ It contains three scripts of SStack, DataFrame and NeoJSON where you can change 
  - `numberOfStatements:`. Any positive integer number greater than 1. Be careful of using high values.
  - `populationSize:`. Any positive integer number greater than 1. Be careful of using high values. 
  - `seed:`. Any number but 0.
- - `selectionStrategy:`. SGARankSelection, SGARouletteSelection, SGATournamentSelection and SGATruncatedSelection
+ - `selectionStrategy:`. `SGARankSelection`, `SGARouletteSelection`, `SGATournamentSelection` and `SGATruncatedSelection`
 
-***MacOS***
+**MacOS**
 ```
 ./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo Baseline.image
 ```
-***Linux***
+**Linux**
 ```
 ./Pharo-Linux/pharo-ui Baseline.image
 ```
-***Windows***
+**Windows**
 ```
 cd Pharo-Windows
 Pharo.exe ..\Baseline.image
