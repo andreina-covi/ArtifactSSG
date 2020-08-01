@@ -2,6 +2,14 @@
 
 Repository contains the artifacts to replicate experiments in the paper "EvoViz: Visual Introspection for Genetically-Based Test Coverage Evolution"
 
+# Pharo images
+
+Before of executing examples uncompress Pharo-Images.zip file (it contains Pharo images with the examples). Copy all the files inside Pharo-Images folder at directory ArtifactSSG folder.
+
+<img src="images/UncompressAndCopy.png" width="500">
+
+You can remove Pharo-Images.zip and Pharo-Images folder.
+
 # SmallSuiteGenerator and EvoViz examples
 
 To visualize EvoViz examples (of paper) execute the following commands on Terminal where the project was downloaded.
@@ -10,23 +18,76 @@ To visualize EvoViz examples (of paper) execute the following commands on Termin
 **MacOSX.** 
 
 ```
-./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo Pharo9_330.image
+./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo Pharo.image
 ```
 
 **Linux.** If you have another distribution of Linux it is possible you could have some bugs.
 
 ```
-./Pharo-Linux/pharo-ui Pharo9_330.image
+./Pharo-Linux/pharo-ui Pharo.image
 ```
 
 **Windows.** Experiments were tested on Windows 10 (64-bits). Depending on the Windows version you have installed it may be some some UI bugs.
 
 ```
 cd Pharo-Windows
-Pharo.exe ..\Pharo9_330.image
+Pharo.exe ..\Pharo.image
 ```
 
 **Open the Visualization.**
-Execute the code using the green play button (at the top right of the window), write your name on the window that appears and you will see the visualization.
+Execute the code using the green play button (at the top right of the window). Another option is selecting all the code with Ctrl + A (Command + A for MacOS), right click on window and select 'Inspect Code' option or pressing 'Ctrl + I' (Command + I for MacOS). After doing that will appear a window where you need to write your name (Is is part of Pharo to have a register who is changing the image Pharo).
+Once the code was executed will appear EvoViz visualization. If the window of visualization is very tiny or small you can extend it (like image). Also you have options to zoom in or zoom out the visualization.
 
-<img src="images/inspectCode.png" width="500">
+<img src="images/RunOrInspect.png" width="500">
+<img src="images/scale.png" width="500">
+<img src="images/exampleStack.png" width="500">
+
+# Experiment
+
+For replicating the experiments shown in the paper follow the next steps
+
+**DataFrame**
+***MacOS***
+```
+./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo DataFrame.image
+```
+***Linux***
+```
+./Pharo-Linux/pharo-ui DataFrame.image
+```
+***Windows***
+```
+cd Pharo-Windows
+Pharo.exe ..\DataFrame.image
+```
+
+**NeoJSON**
+***MacOS***
+```
+./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo NeoJSON.image
+```
+***Linux***
+```
+./Pharo-Linux/pharo-ui NeoJSON.image
+```
+***Windows***
+```
+cd Pharo-Windows
+Pharo.exe ..\NeoJSON.image
+```
+
+**Baseline**
+It contains three scripts where you can change some values to test. Values to changes: `numberOfIterations:`, `numberOfStatements:`, `populationSize:`, `seed:` and `selectionStrategy:`. 
+***MacOS***
+```
+./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo Baseline.image
+```
+***Linux***
+```
+./Pharo-Linux/pharo-ui Baseline.image
+```
+***Windows***
+```
+cd Pharo-Windows
+Pharo.exe ..\Baseline.image
+```
