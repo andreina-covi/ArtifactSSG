@@ -49,8 +49,8 @@ After doing that will appear a window where you need to write your name (Is is p
 If the visualization window is very tiny or small you can extend it. Furthermore, there are options to zoom in or zoom out the visualization.
 
 <p float="left">
-  <img src="images/scale.png" width="400">
-  <img src="images/exampleStack.png" width="595">
+  <img src="images/scale.png" width="395">
+  <img src="images/exampleStack.png" width="550">
 </p>
 
 ## Experiment
