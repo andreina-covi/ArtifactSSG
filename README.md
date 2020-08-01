@@ -1,6 +1,6 @@
 # EvoViz: Visual Introspection for Genetically-Based Test Coverage Evolution
 
-This repository contains the artifacts to replicate experiments of paper: "EvoViz: Visual Introspection for Genetically-Based Test Coverage Evolution".
+This repository contains the artifacts to replicate experiments of paper: **EvoViz: Visual Introspection for Genetically-Based Test Coverage Evolution**.
 
 ## Pharo images
 
@@ -14,11 +14,11 @@ You can remove Pharo-Images.zip and Pharo-Images folder.
 
 To visualize EvoViz examples (of paper) follow next commands on Terminal where the project was downloaded. 
 
-**Hint** We do all experiments on Mac Book Pro and Linux (Debian Stretch), both of 64-bits. For that reason it is necessary you execute commands on 64-bits Operating System. Another way you commands will give error.
+**Hint** We do all experiments on Mac Book Pro and Linux (Debian Stretch), both of 64-bits. For that reason it is necessary you execute commands on 64-bits Operating System. Another way commands will give error.
 
 ### Open Pharo image
 
-First open the Pharo image.
+First open the Pharo image and execute the next command according your OS.
 
 **MacOSX.** 
 
@@ -46,16 +46,18 @@ Execute the code using the green play button (at the top right of the window). A
 <img src="images/RunOrInspect.png" width="500">
 
 After doing that will appear a window where you need to write your name (Is is part of Pharo).
-If the visualization window is very tiny or small you can extend it (like image). Furthermore, there are options to zoom in or zoom out the visualization.
+If the visualization window is very tiny or small you can extend it. Furthermore, there are options to zoom in or zoom out the visualization.
 
 <img src="images/scale.png" width="400">
 <img src="images/exampleStack.png" width="400">
+
+![alt-text-1](images/scale.png) ![alt-text-2](images/exampleStack.png)
 
 ## Experiment
 
 For replicating the experiments shown in the paper:
   1. Open the image Pharo (described below)
-  2. Execute the code of the window that appears in the image (using the green play button or Inspect command, described before).
+  2. Execute the code that appears in the image (use the green play button or Inspect command, described previously).
 
 ### DataFrame 
 
@@ -95,12 +97,12 @@ Pharo.exe ..\NeoJSON.image
 
 ### Baseline
 
-It contains three scripts of SStack, DataFrame and NeoJSON where you can change some values to test. Values to changes: 
- - `numberOfIterations:`. You can change for any integer positive number greter than 1.
- - `numberOfStatements:`. Any integer positive number greater than 1
- - `populationSize:`. Usually a number greater than 1
+It contains three scripts of SStack, DataFrame and NeoJSON where you can change some values of script to test. Values to changes are: 
+ - `numberOfIterations:`. You can change for any positive integer number greater than 1. But you must be careful with using pretty high values, e.g. greater than 100.
+ - `numberOfStatements:`. Any positive integer number greater than 1. Be careful of using high values.
+ - `populationSize:`. Any positive integer number greater than 1. Be careful of using high values. 
  - `seed:`. Any number but 0.
- - `selectionStrategy:`. SGATournamentSelection, SGARankingSelection
+ - `selectionStrategy:`. SGARankSelection, SGARouletteSelection, SGATournamentSelection and SGATruncatedSelection
 
 ***MacOS***
 ```
