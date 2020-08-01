@@ -48,7 +48,7 @@ Execute the code using the green play button (at the top right of the window). A
 After doing that will appear a window where you need to write your name (Is is part of Pharo).
 If the visualization window is very tiny or small you can extend it. Furthermore, there are options to zoom in or zoom out the visualization.
 
-<img src="images/exampleStack.png" width="600">
+<img src="images/exampleStack.png" width="1000">
 
 ## Experiment
 
