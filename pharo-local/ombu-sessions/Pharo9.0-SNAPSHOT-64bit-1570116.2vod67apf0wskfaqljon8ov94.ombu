@@ -1,0 +1,1 @@
+OmEntry {	#tags : {		#author : 'Unknown',		#time : DateAndTime [ '2020-08-02T15:43:24.976593-04:00' ],		#prior : OmReference [ 'Pharo9.0-SNAPSHOT-64bit-1570116.25p65vsg10un4rdu5psnqbvf9', '10499' ],		#self : OmReference [ '1' ]	},	#content : EpSessionSnapshot {		#imageName : '/Users/leela/Documents/Repositories/GitHub/ArtifactSSG/NeoJSON.image'	}}
