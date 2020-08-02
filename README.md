@@ -63,6 +63,8 @@ For replicating the experiments shown in the paper:
   1. Open the image Pharo (described below)
   2. Execute the code that appears in the image (use the green play button or Inspect command, described previously).
 
+Note that due randomness of the genetic algorithm, the visualization can vary a bit between executions.
+
 ### Regex 
 
 Regex image contains three scripts to execute.
