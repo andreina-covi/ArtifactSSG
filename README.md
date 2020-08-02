@@ -18,25 +18,25 @@ To visualize EvoViz examples (of paper) follow next commands on Terminal where t
 
 ### Open Pharo image
 
-First open the Pharo image and execute the next command according your OS.
+First open the Pharo image and execute the next command according your OS. 
 
 **MacOSX.** 
 
 ```
-./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo Pharo.image
+./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo Baseline.image
 ```
 
 **Linux.** If you have another distribution of Linux it is possible you could have some bugs.
 
 ```
-./Pharo-Linux/pharo-ui Pharo.image
+./Pharo-Linux/pharo-ui Baseline.image
 ```
 
 **Windows.** Experiments were tested on Windows 10 (64-bits). Depending on the Windows version you have installed it may be some some UI bugs.
 
 ```
 cd Pharo-Windows
-Pharo.exe ..\Pharo.image
+Pharo.exe ..\Baseline.image
 ```
 
 ### Open the Visualization
@@ -50,28 +50,35 @@ If the visualization window is very tiny or small you can extend it. Furthermore
 
 <img src="images/exampleStack.png" width="1000">
 
+Baseline image contains four scripts of SStack, Regex, DataFrame and NeoJSON where you can change some values of script to test. Values to changes are: 
+ - `numberOfIterations:`. You can change for any positive integer number greater than 1. But you must be careful with using pretty high values, e.g. greater than 100.
+ - `numberOfStatements:`. Any positive integer number greater than 1. Be careful of using high values.
+ - `populationSize:`. Any positive integer number greater than 1. Be careful of using high values. 
+ - `seed:`. Any number but 0.
+ - `selectionStrategy:`. `SGARankSelection`, `SGARouletteSelection`, `SGATournamentSelection` and `SGATruncatedSelection`
+
 ## Experiment
 
 For replicating the experiments shown in the paper:
   1. Open the image Pharo (described below)
   2. Execute the code that appears in the image (use the green play button or Inspect command, described previously).
 
-### DataFrame 
+### Regex 
 
-DataFrame image contains three scripts to execute.
+Regex image contains three scripts to execute.
 
 **MacOS**
 ```
-./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo DataFrame.image
+./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo Regex.image
 ```
 **Linux**
 ```
-./Pharo-Linux/pharo-ui DataFrame.image
+./Pharo-Linux/pharo-ui Regex.image
 ```
 **Windows**
 ```
 cd Pharo-Windows
-Pharo.exe ..\DataFrame.image
+Pharo.exe ..\Regex.image
 ```
 
 ### NeoJSON
@@ -92,25 +99,20 @@ cd Pharo-Windows
 Pharo.exe ..\NeoJSON.image
 ```
 
-### Baseline
+### DataFrame 
 
-It contains three scripts of SStack, DataFrame and NeoJSON where you can change some values of script to test. Values to changes are: 
- - `numberOfIterations:`. You can change for any positive integer number greater than 1. But you must be careful with using pretty high values, e.g. greater than 100.
- - `numberOfStatements:`. Any positive integer number greater than 1. Be careful of using high values.
- - `populationSize:`. Any positive integer number greater than 1. Be careful of using high values. 
- - `seed:`. Any number but 0.
- - `selectionStrategy:`. `SGARankSelection`, `SGARouletteSelection`, `SGATournamentSelection` and `SGATruncatedSelection`
+Additionally you can execute code of DataFrame image.
 
 **MacOS**
 ```
-./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo Baseline.image
+./Pharo-OSX/Pharo.app/Contents/MacOS/Pharo DataFrame.image
 ```
 **Linux**
 ```
-./Pharo-Linux/pharo-ui Baseline.image
+./Pharo-Linux/pharo-ui DataFrame.image
 ```
 **Windows**
 ```
 cd Pharo-Windows
-Pharo.exe ..\Baseline.image
+Pharo.exe ..\DataFrame.image
 ```
