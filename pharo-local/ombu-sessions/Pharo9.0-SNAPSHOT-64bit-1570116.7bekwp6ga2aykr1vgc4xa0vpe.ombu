@@ -1,0 +1,1 @@
+OmEntry {	#tags : {		#author : 'Unknown',		#time : DateAndTime [ '2020-08-02T15:55:25.407606-04:00' ],		#prior : OmReference [ 'Pharo9.0-SNAPSHOT-64bit-1570116.bys8nsd1wojw3ug8lzbuvql3y', '1' ],		#self : OmReference [ '1' ]	},	#content : EpSessionSnapshot {		#imageName : '/Users/leela/Documents/Repositories/GitHub/ArtifactSSG/Baseline.image'	}}
